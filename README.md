@@ -11,6 +11,7 @@ tenant_id = os.environ.get("PT_TENANT_ID")
 client_id = os.environ.get("PT_CLIENT_ID")
 client_secret = os.environ.get("PT_CLIENT_SECRET")
 ```
+Be sure to grant your service principal the "Key Vault Secrets User" role and access to the key vault.  This can be done in the Azure Portal and be sure to add an access policy to the key vault.
 
 3. Modify the launch.json for Visual Studio Code for the command line arguments to pass into the program.  This can be done with a Linux Script as well.
 ```
